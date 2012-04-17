@@ -25,7 +25,7 @@ module Jetpack
       contents["ruby_version"] =  user_defined_options["ruby_version"]    || "1.8"
       contents["app_type"]     =  user_defined_options["app_type"]        || "rails"
       contents["environment"]  =  user_defined_options["environment"]     || nil
-
+      contents["jar_includes"] =  user_defined_options["jar_includes"]    || ""
       @keys = contents.keys.sort
 
       super(contents)
